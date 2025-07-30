@@ -2,6 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MapPin, Phone, Mail, Clock, Star, ArrowRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import heroimage from "@/assets/images/s1hero.jpg";
+import salonInterior from "@/assets/images/Salon-interior.jpg";
+import balayageOmbre from "@/assets/images/Balayage-Ombre.jpg";
+import keratinSmoothing from "@/assets/images/Keratin-Smoothing.jpg";
+import modernHaircut from "@/assets/images/modern-haircut.jpg";
 
 export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -14,17 +19,17 @@ export default function Home() {
     {
       name: "Modern Haircuts",
       description: "Chic, contemporary cuts tailored to your unique style and features.",
-      image: "https://images.unsplash.com/photo-1599387737204-1815855051b6?w=600&h=700&fit=crop"
+      image: modernHaircut
     },
     {
       name: "Balayage & Ombré",
       description: "Hand-painted color for a natural, sun-kissed, and seamless look.",
-      image: "https://images.unsplash.com/photo-1616099397989-1e3545e3f364?w=600&h=700&fit=crop"
+      image: balayageOmbre
     },
     {
       name: "Keratin Smoothing",
       description: "Tame frizz and achieve silky, smooth hair with our premium treatments.",
-      image: "https://images.unsplash.com/photo-1605552259124-b3713f018d2d?w=600&h=700&fit=crop"
+      image: keratinSmoothing
     },
     {
       name: "Gloss & Tone",
@@ -139,7 +144,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 h-96 md:h-[calc(100vh-80px)]">
               <img 
-                src="https://images.unsplash.com/photo-1597007259933-b3c107c81a2c?w=800&h=1200&fit=crop"
+                src={heroimage}
                 alt="Stylish woman with modern haircut"
                 className="w-full h-full object-cover"
               />
@@ -186,7 +191,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="md:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1580616426867-6889a7f3d3b7?w=800&h=1000&fit=crop"
+                src={salonInterior}
                 alt="Salon interior"
                 className="w-full h-full object-cover"
               />
